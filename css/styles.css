@@ -161,6 +161,26 @@ p {
 .link .address:focus {
   color: var(--accent-color);
 }
+.link .item {
+  display: flex;
+}
+.link .item::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.icon-mail::before {
+  background-image: url(../images/mail-icon.svg);
+  width: 16px;
+  height: 12px;
+}
+.icon-tel::before {
+  background-image: url(../images/phone-icon.svg);
+  width: 10px;
+  height: 16px;
+}
 
 /* ---------- СТУДИЯ ---------- */
 
