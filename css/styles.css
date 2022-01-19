@@ -186,9 +186,15 @@ p {
 
 /* ---------- Герой ---------- */
 .hero {
+  background-color: var(--background-footer-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-footer-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -216,6 +222,7 @@ p {
 
   background-color: var(--accent-color);
   color: var(--background-color);
+  font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -257,7 +264,30 @@ p {
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
-
+.card-set .item::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: var(--secondary-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
 /* ---------- Чем мы занимаемся ---------- */
 .our-work .container {
   display: flex;
