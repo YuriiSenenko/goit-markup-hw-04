@@ -375,7 +375,8 @@ p {
 .clients-item:not(:last-child) {
 	margin-right: 30px;
 }
-.clients-item {
+.client-link {
+	display: block;
 	box-sizing: border-box;
 	width: 170px;
 	height: 92px;
@@ -383,6 +384,18 @@ p {
 	align-items: center;
 	border-radius: 4px;
 	border: 1px solid var(--border-color);
+}
+.client-link:hover,
+.client-link:focus {
+	border-color: var(--accent-color);
+}
+.client-icon {
+	fill: #afb1b8;
+}
+
+.client-icon:focus,
+.client-icon:hover {
+	fill: var(--accent-color);
 }
 /* ---------- ПОРТФОЛИО ---------- */
 
