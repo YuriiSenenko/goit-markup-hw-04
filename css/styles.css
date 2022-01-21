@@ -13,8 +13,10 @@
 	--secondary-text-color: #757575;
 	--accent-color: #2196f3;
 	--black-logo-color: #000000;
+	--border-portfolio-color: #eeeeee;
 	--border-color: #afb1b8;
 	--icon-color: #afb1b8;
+	--icon-bacground-color: #85868b;
 }
 
 body {
@@ -339,7 +341,7 @@ p {
 	margin-left: 32px;
 }
 .social-link-team {
-	fill: #afb1b8;
+	fill: var(--icon-color);
 	display: block;
 	box-sizing: border-box;
 	background-color: var(--background-color);
@@ -378,7 +380,7 @@ p {
 	margin-right: 30px;
 }
 .client-link {
-	fill: #afb1b8;
+	fill: var(--icon-color);
 	display: block;
 	box-sizing: border-box;
 	width: 170px;
@@ -464,9 +466,9 @@ p {
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .object-text {
-	border-left: 1px solid #eeeeee;
-	border-bottom: 1px solid #eeeeee;
-	border-right: 1px solid #eeeeee;
+	border-left: 1px solid var(--border-portfolio-color);
+	border-bottom: 1px solid var(--border-portfolio-color);
+	border-right: 1px solid var(--border-portfolio-color);
 	padding: 20px 24px;
 }
 
@@ -547,7 +549,7 @@ footer {
 .social-link {
 	display: block;
 	box-sizing: border-box;
-	background-color: #85868b;
+	background-color: var(--icon-bacground-color);
 	width: 44px;
 	height: 44px;
 	padding: 12px;
