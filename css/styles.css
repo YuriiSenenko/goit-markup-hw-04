@@ -149,6 +149,9 @@ p {
 	margin-left: auto;
 	align-items: center;
 }
+.link .item + .item {
+	margin-left: 30px;
+}
 
 .link .address {
 	display: block;
@@ -239,7 +242,7 @@ p {
 	display: flex;
 	margin: 0 15px;
 }
-.container .item:not(:last-child) {
+.peculiarities .item:not(:last-child) {
 	margin-right: 30px;
 }
 
